@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+  
+    <!--NAVBAR-->
+    <nav class=" p-4 sm:px-0 z-10 bg-white shadow-xl w-full fixed">
+      <div class="flex flex-wrap relative mx-auto justify-between items-center min-w-full">
+
+          <a href="http://www.cital.store/" class="flex items-center">
+              <img src="https://www.cital.store/assets/cital_logo-fedb7bbd6851a318549eb781b17f0b08a37a8bf4adb0fe4306088200ed79a618.webp" class="h-14" alt="CITAL">
+          </a>
+
+          
+          <div class="flex-row flex-grow-1 pt-1 mt-1 relative text-gray-600 bg-gray-100 rounded-lg">
+              <form class="hidden md:block" action="">
+              <input class="bg-gray-100 w-96 h-10 px-5 pr-16 rounded-3xl text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
+              <button type="submit" class="absolute right-0 top-0 mt-3 mr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                    
+              </button>
+            </form>
+
+          </div>
+
+          <!-- div class="justify-evenly align-middle p-5">
+              <ul class="font-medium flex flex-row ">
+                  <li class="">
+                      <a href="#home" class="p-3 text-white hover:text-orange-600 ">HOME</a>
+                  </li>
+                  
+                  <li class="">
+                      <a href="#about" class="p-3 text-white hover:text-orange-600 ">ABOUT</a>
+                  </li>
+
+                  
+                  <li class="">
+                      <a href="#contact" class="p-3 text-white hover:text-orange-600 ">CONTACT</a>
+                  </li>
+              </ul>
+          </div -->
+
+          <div class="p-3 hidden lg:block mt-1 relative bg-gray-100 rounded-lg text-gray-500">
+              Delivery to:  
+              <input type="text" name="site" id="site" class="bg-transparent border-dashed" placeholder=" Enter a Site...">
+
+          </div>
+
+
+      
+          <div class="flex relative">
+
+
+            <div class="flex flex-col items-center sm:mx-16 mt-1 px-4 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>
+              <span class="-m-2 hidden sm:block font-medium">Cart</span>
+            </div>
+
+            
+
+
+            <div class="flex flex-col items-center sm:mx-4 mx-auto sm:mr-10 relative ">
+            <button type="button" class=" p-1 focus:outline-none rounded-full focus:ring-2 focus:ring-black" aria-expanded="false" aria-haspopup="true" id="profile-menu">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="h-10 w-10 focus:bg-gray-800" data-dropdown-toggle="dropdown">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                          </svg>
+                          <span></span>
+                        </button>
+                   
+                        
+
+                         
+                          </div>
+
+                        </div>              
+                      
+               
+            
+                
+          </div>
+      </div>
+
+  </nav>
+
+    <!-- Products -->
+
+    <div class="sm:mx-20 mx-8 pt-32 text-gray-700 font-bold opacity-70 text-lg sm:text-2xl">
+      <h2>CATEGORIES</h2>
+  </div>
+
+    <section aria-labelledby="products-heading" class="mx-auto px-auto pt-5">
+        <h2 id="products-heading" class="sr-only">Products</h2>
+
+       <div class="grid bg-white mx-8 grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group">
+            <div class="flex md:flex-col">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-auto sm:h-96 shadow-xl">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/qrzht8lhbnuuealgv19hwhe9oo5u?response-content-disposition=inline%3B%20filename%3D%22Category%20Images%202%20-%20500x500%20-%202023-07-05T191717.620.jpg%22%3B%20filename%2A%3DUTF-8%27%27Category%2520Images%25202%2520-%2520500x500%2520-%25202023-07-05T191717.620.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230811%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230811T053623Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5754c20a7b74d14a5bbee72dd956514f70c7c59c85d12dee6edada8f3fe07dc1" alt="Safety Shoes" class="p-5 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="flex flex-col justify-center sm:flex-none">
+            <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Safety Shoes</h3>
+          </div>
+          </div>
+          </a>
+          
+          <a href="#" class="group">
+            <div class="flex md:flex-col">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-auto sm:h-96 shadow-xl">
+              <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmNJIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d799914dac2dee5d6bf277baea8cb4fdf013edc7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmtDbkFGcEFwd0IiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--822c6585102d4a004d91ffa36862ccc27bdfe9fb/dHDcDK-optrel-handshield-500x500.jpg" alt="Face Sheilds" class="p-5 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="flex flex-col justify-center sm:flex-none">
+            <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Face Shields</h3>
+          </div>
+          </div>
+          </a>
+
+          <a href="#" class="group">
+            <div class="flex md:flex-col">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-auto sm:h-96 shadow-xl">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/5rpktucsb4phnz6ug5eb4gx25rv1?response-content-disposition=inline%3B%20filename%3D%22Category%20Images%202%20-%20500x500%20%252848%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27Category%2520Images%25202%2520-%2520500x500%2520%252848%2529.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230812%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230812T124351Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=66219837b3e19e01c64eabcfe349ff65950ca4e83e9a5e94e59ac8c657e354ba" alt="Fire Blankets" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="flex flex-col justify-center sm:flex-none">
+            <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Fire Balnkets</h3>
+          </div>
+          </div>
+          </a>
+
+          <a href="#" class="group">
+            <div class="flex md:flex-col">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-auto sm:h-96 shadow-xl">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/4223cdaokaff3xsdjke76vzs8dep?response-content-disposition=inline%3B%20filename%3D%22Category%20Images%202%20-%20500x500%20-%202023-07-14T133504.323.jpg%22%3B%20filename%2A%3DUTF-8%27%27Category%2520Images%25202%2520-%2520500x500%2520-%25202023-07-14T133504.323.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230802%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T170018Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=55ef1ea8193e25865beccbc25ef488e39d5b89bb0e2f059ae72271d1af06ddfc" alt="Welding Safety" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="flex flex-col justify-center sm:flex-none">
+              <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Welding Safety</h3>
+          </div>
+          </div>
+          </a>
+
+          <a href="#" class="group">
+            <div class="flex md:flex-col">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-auto sm:h-96 shadow-xl">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/uadtqjf93im74bjeulucesejfon7?response-content-disposition=inline%3B%20filename%3D%22Category%20Images%202%20-%20500x500%20-%202023-07-27T162229.205.jpg%22%3B%20filename%2A%3DUTF-8%27%27Category%2520Images%25202%2520-%2520500x500%2520-%25202023-07-27T162229.205.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230802%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T170229Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1e72cad50b18d93ec63be737691ffa2eb4e153aadba137832aa34d0c70235176" alt="Fire Safety" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="flex flex-col justify-center sm:flex-none">
+              <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Fire Safety</h3>
+          </div>
+          </div>
+          </a>
+
+          <a href="#" class="group">
+            <div class="flex md:flex-col">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-auto sm:h-96 shadow-xl">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/n7duqcqrvjr6f0yjr7d0m8xl10or?response-content-disposition=inline%3B%20filename%3D%22Category%20Images%202%20-%20500x500%20%252846%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27Category%2520Images%25202%2520-%2520500x500%2520%252846%2529.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230802%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T170342Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a757282e5f48cbb50cd3788520cbbb99e1ce6c6fb917c1f33deb002f78c7c337" alt="Safety Belts" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="flex flex-col justify-center sm:flex-none">
+              <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Safety Belts</h3>
+          </div>
+          </div>
+          </a>
+
+
+          <a href="#" class="group">
+            <div class="flex md:flex-col">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-auto sm:h-96 shadow-xl">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/qby2of55otbx65c97hgjoj4c03td?response-content-disposition=inline%3B%20filename%3D%22Category%20Images%202%20-%20500x500%20%252833%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27Category%2520Images%25202%2520-%2520500x500%2520%252833%2529.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230802%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T170720Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b364d387782004f8ea31a916f4dd10941f0b19558b1d2986e605f8eb8dccfbc1" alt="Safety Gloves" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="flex flex-col justify-center sm:flex-none">
+              <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Safety Gloves</h3>
+          </div>
+          </div>
+
+
+          <a href="#" class="group">
+            <div class="flex md:flex-col">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-auto sm:h-96 shadow-xl">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/n9otcdwcht2ji6bqty2fentfttsq?response-content-disposition=inline%3B%20filename%3D%22c97z5D-first-aid-box-1000x1000.jpg%22%3B%20filename%2A%3DUTF-8%27%27c97z5D-first-aid-box-1000x1000.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230802%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T170836Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=22b7e34fc6b2fae209b36d49e0bcd64ff87fc73024ddad186785e4ffcc8452c8" alt="First-Aid Kits" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="flex flex-col justify-center sm:flex-none">
+              <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">First-Aid Kits</h3>
+          </div>
+          </div>
+
+
+          <a href="#" class="group">
+            <div class="flex items-center aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-96">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/oj4gwsfcpnioph9kkmzt83pn9ls8?response-content-disposition=inline%3B%20filename%3D%22Zm45Cc-sun-100-safety-goggles-500x500.jpg%22%3B%20filename%2A%3DUTF-8%27%27Zm45Cc-sun-100-safety-goggles-500x500.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230802%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T171047Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4889638c389cc055afbde60b44459fdbc2df91681aae1def58daa90e354c30f1" alt="Safety Goggles" class="p-10 object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Safety Goggles</h3>
+          </a>
+
+          <a href="#" class="group">
+            <div class="flex items-center aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-96">
+              <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWtJIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e70395816a40c81613641fd47a5f9cddd4031177/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmtDbkFGcEFwd0IiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--822c6585102d4a004d91ffa36862ccc27bdfe9fb/AYS68e-cotton-boiler-suit-500x500.jpg" alt="Boiler Suits" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Boiler Suits</h3>
+          </a>
+          
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-96">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/iny2vnk09dkkq7nnx4ppdgve28wm?response-content-disposition=inline%3B%20filename%3D%22hs4eiitb-1683031531887-economic-gum-boot-500x500.jpg%22%3B%20filename%2A%3DUTF-8%27%27hs4eiitb-1683031531887-economic-gum-boot-500x500.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230802%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T171352Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fe747f69ad10f0c72e36bda6c5cf572407ad060d71205e3d621b4dc987532542" alt="Gumboots" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Gumboots</h3>
+          </a>
+          
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-white xl:aspect-h-8 xl:aspect-w-7 h-96">
+              <img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/v32hbfh40gkzdoze5ybpiyptk7tl?response-content-disposition=inline%3B%20filename%3D%22Category%20Images%202%20-%20500x500%20-%202023-07-27T155629.229.jpg%22%3B%20filename%2A%3DUTF-8%27%27Category%2520Images%25202%2520-%2520500x500%2520-%25202023-07-27T155629.229.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230802%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T171458Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ec85763d2d1e237840ca3ca395181c1cec5e52c64d370a698a38e1789ff592ad" alt="Ear Protectors" class="p-10 h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mx-2 mt-4 text-xl text-center font-bold text-gray-800">Ear Protectors</h3>
+          </a>
+          
+          
+          
+          
+          <!-- More products... -->
+       </div>
+      </section>
+      
+      <!--FOOTER-->
+       <footer class="mt-10 h-50 w-full"> 
+        <div class="mt-10 bg-gray-800 h-50 w-50">
+          
+        </div>
+       </footer>
+    
+
+
+
+    
+    </body>
+</html>

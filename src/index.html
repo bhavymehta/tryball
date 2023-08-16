@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="">
+
+  
+      <!--NAVBAR-->
+      <nav class=" p-4 sm:px-0 z-20 bg-white shadow-xl w-full fixed">
+        <div class="flex flex-wrap bg-white relative mx-auto md:justify-between items-center min-w-full">
+  
+            <a href="http://www.cital.store/" class="flex items-center md:ml-3">
+                <img src="https://www.cital.store/assets/cital_logo-fedb7bbd6851a318549eb781b17f0b08a37a8bf4adb0fe4306088200ed79a618.webp" class="h-10 sm:h-14" alt="CITAL">
+            </a>
+  
+            
+            <div class="flex-row mt-1 relative w-1/3 text-gray-600 bg-white rounded-lg">
+                <form class="hidden md:block" action="">
+                <input class="bg-gray-100 w-full h-10 px-5 pr-16 rounded-lg text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
+                <button type="submit" class="absolute right-0 top-0 mt-2 mr-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                      
+                </button>
+              </form>
+  
+            </div>
+  
+            <!-- div class="justify-evenly align-middle p-5">
+                <ul class="font-medium flex flex-row ">
+                    <li class="">
+                        <a href="#home" class="p-3 text-white hover:text-orange-600 ">HOME</a>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#about" class="p-3 text-white hover:text-orange-600 ">ABOUT</a>
+                    </li>
+  
+                    
+                    <li class="">
+                        <a href="#contact" class="p-3 text-white hover:text-orange-600 ">CONTACT</a>
+                    </li>
+                </ul>
+            </div -->
+  
+            <div class="p-2 pl-2 hidden lg:block md:w-1/4 mt-1 relative bg-gray-100 rounded-lg text-gray-500">
+                Delivery to:  
+                <input type="text" name="site" id="site" class="bg-transparent" placeholder=" Enter a Site...">
+  
+            </div>
+  
+  
+        
+            <div class="hidden md:flex relative">
+  
+  
+              <div class="flex flex-col items-center sm:ml-16 sm:mr-5 mt-1 px-4 mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                <span class="-m-2 hidden sm:block text-sm font-medium">Cart</span>
+              </div>
+  
+              
+  
+  
+              <div class="flex flex-col items-center sm:mx-4 mx-auto sm:mr-10 relative ">
+              <button type="button" class=" p-1 focus:outline-none rounded-full " aria-expanded="false" aria-haspopup="true" id="profile-menu">
+                            
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  
+                            
+                            <span class="-m-2 hidden sm:block text-sm font-medium">Account</span>
+                          </button>
+                     
+                          
+  
+                           
+                            </div>
+  
+                          </div>              
+                        
+                 
+              
+                  
+            </div>
+        
+  
+    </nav>
+  
+    <div class="md:hidden z-10 flex flex-col w-full fixed bg-white pt-20 shadow-xl">
+  
+      <form class="md:hidden" action="">
+        <input class="bg-white h-10 w-full px-5 text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
+        <button type="submit" class="absolute right-0 top-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+              
+        </button>
+      </form>
+  
+    </div>
+  
+
+ 
+
+  
+
+        <!--Breadcrumbs navigation-->
+        <!--div class="block bg-white pt-36 py-2 md:py-0 md:pt-28 px-5 md:px-5 ">
+          <nav class="flex" aria-label="Breadcrumb">
+              <ol role="list" class="flex items-center space-x-4">
+                <li>
+                  <div>
+                    <a href="#" class="text-gray-600 hover:text-gray-500">
+                      <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+                      </svg>
+                      <span class="sr-only">Home</span>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg class="h-5 w-5 flex-shrink-0 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Safety</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg class="h-5 w-5 flex-shrink-0 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="#" class="ml-4 text-sm font-bold text-gray-800 hover:text-gray-700">Safety Shoes</a>
+                  </div>
+                </li>
+
+                
+                </ol>
+          
+      </div-->
+
+      <div>
+      <div class="pt-40 h-full w-full">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Naye Zamane Ka <br> <span class="text-orange-600">Construction Store</span></h1>
+            <p class="mt-6 text-lg leading-6 text-gray-600"> Free delivery of hardware, safety, wood, and more at your site, on time, at the best prices, and correct bills! Always!</p>
+           
+            
+          </div>
+      </div>
+
+  
+    <!--CATEGORIES-->
+
+    <div class="mt-16 md:mt-26 w-full text-center text-2xl font-bold text-gray-600 -mb-5">
+      Featured Categories
+    </div>
+
+    <div class="flex flex-wrap justify-center sm:pl-5 w-full">
+
+      
+    <div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+      <a class="w-full" data-turbo-frame="_top" href="/src/webp.html">
+          <div class="md:bg-white overflow-hidden md:overflow-visible">
+              <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/safety.png" alt="">
+           
+          <div class="text-center">
+             <div>
+                <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Safety</p>
+                
+             </div>
+             
+          </div>
+      </div>
+        </a>
+  </div>
+
+  
+      
+  <div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+    <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+        <div class="md:bg-white overflow-hidden md:overflow-visible">
+            <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/electrical.png" alt="">
+         
+        <div class="text-center">
+           <div>
+              <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Electricals</p>
+              
+           </div>
+           
+        </div>
+    </div>
+      </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/fasteners.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Fasteners</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/stationery.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Stationery</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/cement.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Cement</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/ply.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Ply & Wood</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/hardware.png" alt="">
+       
+      <div class="text-center">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Hardware & Tools</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/machine.png" alt="">
+       
+      <div class="text-center p-2 w-40 md:w-full">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Machines & Power Tools</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/chemicals.png" alt="">
+       
+      <div class="text-center p-2 w-40 md:w-full">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Chemicals & Adhesives</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/pipes.png" alt="">
+       
+      <div class="text-center p-2 w-40 md:w-full">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Pipes, Fittings, & Adhesives</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+
+      
+<div class="md:ml-5 md:w-48 sm:h-52 mt-5 ml-5 md:m-10 shadow-xl hover:opacity-60 delay-75">
+  <a class="w-full" data-turbo-frame="_top" href="/store_products/0ANCxG5iiH94kGmC?tn_uid=v9kIt5vqHgjqAY5r">
+      <div class="md:bg-white overflow-hidden md:overflow-visible">
+          <img class="h-44 w-44 md:px-2 md:h-full md:w-full" src="/prdct-ref/scaffolding.png" alt="">
+       
+      <div class="text-center p-2 w-40 md:w-full">
+         <div>
+            <p class="text-lg md:text-xl font-bold text-gray-900 pb-2 md:pb-5">Scaffolding & Formwork</p>
+            
+         </div>
+         
+      </div>
+  </div>
+    </a>
+</div>
+
+
+   
+    <!--div class="pt-40 flex flex-wrap bg-white justify-evenly">
+         
+        
+        
+     
+
+      
+      
+      <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+        
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md h-52 w-52 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="w-1/2 sm:w-48">Chemicals & Adhesives</div>
+        </div>
+        </a>
+
+        <a href="#CHEMICALS" class="">
+          <div class="p-5 sm:m-5 font-bold font text-center text-lg sm:text-xl text-gray-700 shadow-md w-1/2 sm:h-42 sm:w-42">
+          <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="h-full w-full sm:p-5" alt="CHEMICALS"><div class="sm:w-48">Safety</div>
+        </div>
+        </a>
+
+
+      <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md h-42 w-42">
+               <a href="#SAFETY"><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e263e25c648c3edb6c7e7ed582ca93b0829e437/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Untitled%20design.png" class="mx-auto h-36 w-36" alt="SAFETY"> Chemicals & Adhesives </a>
+            </div>
+
+            
+            
+            
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
+                <a href="#PLYWOOD" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb1FLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6cfa58328faf70a15aba6535b3d0adf70fe73f6/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Wood%20&%20Ply%20Category%20Image%20(1).png" class="mx-auto h-36 w-36" alt="PLYWOOD">Ply & Wood</a>
+            </div>
+            
+            
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
+                <a href="#ELECTRICAL" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdlFmIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbf9a1f4f6aab23e08d42a3d633fa6220049a9f6/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(54).png" class="mx-auto h-36 w-36" alt="ELECTRICAL">Electrical</a>
+            </div>
+            
+           
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
+                <a href="#FASTENERS" class=""><img src="https://cital-prd-public.s3.ap-south-1.amazonaws.com/7neiqzsoabgk60cyyuhp5wwz13yk?response-content-disposition=inline%3B%20filename%3D%22Category%20Images%202%20-%20500x500%20%252873%2529.png%22%3B%20filename%2A%3DUTF-8%27%27Category%2520Images%25202%2520-%2520500x500%2520%252873%2529.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2WWQSLETLFXRHNHR%2F20230731%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230731T111131Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7913d86ed97a31b9795b03d39682a3cb2568c32ecd43e0a76810d38724665a32" class="mx-auto h-36 w-36" alt="FASTENERS">Fasteners</a>
+            </div>
+            
+            
+            
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
+                <a href="#STATIONERY" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdklmIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7144d32f007b72a5da6e4f1934b24aa43fecde39/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(53).png" class="mx-auto h-36 w-36" alt="STATIONERY">Stationery</a>
+            </div>
+            
+            
+           
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
+                <a href="#Cement" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUFuIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fc002c1ff7af33ca8171eb078284eb9912faa5ae/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(75).png" class="mx-auto h-36 w-36" alt="Cement">Cement</a>
+            </div>
+
+         
+
+        
+
+            <div class="flex m-auto sm:m-5 p-5 md:p-5 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md w-1/2 sm:w-44 sm:h-60">
+              <a href="#CHEMICALS" class="">
+                <div class="flex flex-col justify-center">
+                <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclFZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2bd25894163beb20a4cfa70a9607ac221bd26591/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(27).png" class="h-36 w-36" alt="CHEMICALS"><div class="flex justify-center">Chemicals & Adhesives</div>
+              </div>
+              
+              </a>
+          </div>
+          
+
+          <div class="p-5 sm:m-5 font-bold font text-lg sm:text-xl text-gray-700 shadow-md h-42 w-42">
+                <a href="#CHEMICALS" class="">
+                  
+                  <img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclFZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2bd25894163beb20a4cfa70a9607ac221bd26591/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(27).png" class="h-36 w-36" alt="CHEMICALS"><div class="flex justify-center bg-red-400 w-48">Chemicals & Adhesives</div>
+                
+                </a>
+            </div>
+            
+            
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
+                <a href="#HARDWARE & TOOLS" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaElMIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--acb973bfcd1e83900eaee986a36d31db9fcd0b1d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%20-%20500x500%20(11).png" class="mx-auto h-36 w-36" alt="HARDWARE & TOOLS"> Hardware & Tools </a>
+            </div>
+            
+           
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md h-42 w-42">
+                <a href="#MACHINES & POWER TOOLS" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckFoIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--91e10eb89ada680e91bfa0f3d8e78d56671695cc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(2)%20(1).png" class="mx-auto h-36 w-36" alt="MACHINES & POWER TOOLS">Machines & Power Tools</a>
+            </div>
+            
+            
+           
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
+                <a href="#Pipes & Fittings" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUFVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3fbb2788bbde12a77b479fc3ab9eff605f0582d8/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/astm.png" class="mx-auto h-36 w-36" alt="Pipes & Fittings">Pipes, Fittings & Adhesives</a>
+            </div>
+            
+            
+            <div class="flex p-5 md:p-10 font-bold font text-lg sm:text-xl text-center text-gray-700 shadow-md">
+                <a href="#Pipes & Fittings" class=""><img src="https://www.cital.store/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBak1jIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cda2558937e17bac70648f09855066aa7de2c02c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RW5KbGMybDZaVjkwYjE5bWFYUmJCMmxhYVZvPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a967e9de74fb4a9da0b18f3faea7651721cef670/Category%20Images%202%20-%20500x500%20(39).png" class="mx-auto h-36 w-36" alt="Pipes & Fittings">Scaffolding & Formwork</a>
+            </div-->
+          
+
+          
+           
+      
+        
+    
+    </div>
+
+    <div class="relative isolate overflow-hidden bg-white px-6 mt-20 py-24 lg:overflow-visible lg:px-0">
+  <div class="mx-auto max-w-2xl flex flex-col items-center">
+    <p class="text-base font-semibold leading-7 uppercase text-center text-orange-600 ">Never lose time & money again!</p>
+    <h1 class="mt-2 text-3xl font-bold text-center tracking-tight text-gray-900 sm:text-4xl">Simply, order on Cital</h1>
+  </div>
+  <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0  py-8">
+    <div class="flex flex-col items-center w-full md:w-1/2 px-4 py-4">
+      <div class="flex flex-col items-center">
+        <span class="text-6xl font-black text-gray-400">1.</span>
+        <p class="font-bold text-xl text-center">
+          Site team places order
+        </p>
+      </div>
+      <div class="py-4">
+        <img class="" alt="Place order on cital" src="/prdct-ref/asset1.png" />
+      </div>
+    </div>
+    <div class="flex flex-col items-center w-full md:w-1/2 py-4">
+      <div class="flex flex-col items-center">
+        <span class="text-6xl font-black text-gray-400">2.</span>
+        <p class="font-bold text-xl text-center">
+          Authorised person checks & approves
+        </p>
+      </div>
+      <div class="py-4">
+        <img class="" alt="Authorised person approves order" src="/prdct-ref/asset2.png" />
+      </div>
+    </div>
+  </div>
+  <div class="relative isolate overflow-hidden bg-white px-6 md:pt-20 lg:overflow-visible lg:px-0">
+    <div class="flex flex-col items-center w-full py-4">
+      <div class="flex flex-col items-center py-8">
+        <span class="text-6xl font-black text-orange-400">3.</span>
+        <p class="font-bold text-xl text-center">
+          We deliver at site within 12 hrs
+        </p>
+      </div>
+      <div class="py-4">
+        <img class="" alt="Cital delivers in 12 hrs" src="/prdct-ref/asset3.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!--Footer-->
+    
+    <!--Footer container-->
+<footer class="bg-neutral-200 text-center text-white dark:bg-neutral-600 pb-16 md:pb-0">
+
+    <!--Socials-->
+    <div class="flex p-5 justify-center">
+      
+        <a href="https://api.whatsapp.com/send/?phone=917600880770&text=Hey%21&type=phone_number&app_absent=0" target="_blank" class="m-5 text-neutral-800 dark:text-neutral-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </a>
+        
+        <a href="https://www.instagram.com/citalco/" target="_blank" class="m-5 text-neutral-800 dark:text-neutral-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/citalco/" target="_blank" class="m-5 text-neutral-800 dark:text-neutral-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+        </a>
+
+        <a href="https://www.facebook.com/citalco/" target="_blank" class="m-5 text-neutral-800 dark:text-neutral-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+        </a>
+
+        
+        <a href="https://twitter.com/citalco" target="_blank" class="m-5 text-neutral-800 dark:text-neutral-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+        </a>
+        
+    </div>
+
+    <section class="py-6 my-2 bg-neutral-800 text-gray-50">
+        <div class="container mx-auto flex flex-col justify-around p-4 text-center md:p-10 lg:flex-row">
+            <div class="flex flex-col justify-center lg:text-left">
+                <p class="mb-1 text-sm font-medium tracki uppercase text-gray-500">Official App</p>
+                <h1 class="py-2 text-3xl font-medium leadi title-font">Cital: Construction Superstore</h1>
+            </div>
+            <div class="flex flex-col items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
+                <button onclick="window.location.href = 'https://play.google.com/store/apps/details?id=co.cital.android.store'" class="inline-flex hover:bg-orange-600 items-center px-6 py-3 rounded-lg dark:bg-orange-500 dark:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current w-9 h-9 dark:text-gray-900">
+                        <path d="M 5.4160156 2.328125 L 12.935547 10.158203 C 13.132547 10.363203 13.45925 10.363203 13.65625 10.158203 L 15.179688 8.5742188 C 15.405688 8.3392188 15.354312 7.956875 15.070312 7.796875 C 11.137313 5.571875 6.2620156 2.811125 5.4160156 2.328125 z M 3.140625 2.8476562 C 3.055625 3.0456562 3 3.2629063 3 3.5039062 L 3 20.591797 C 3 20.788797 3.044375 20.970625 3.109375 21.140625 L 11.576172 12.324219 C 11.762172 12.131219 11.762172 11.826813 11.576172 11.632812 L 3.140625 2.8476562 z M 17.443359 9.2578125 C 17.335484 9.2729375 17.233297 9.32375 17.154297 9.40625 L 15.015625 11.632812 C 14.829625 11.825812 14.829625 12.130219 15.015625 12.324219 L 17.134766 14.529297 C 17.292766 14.694297 17.546141 14.729188 17.744141 14.617188 C 19.227141 13.777188 20.226563 13.212891 20.226562 13.212891 C 20.725562 12.909891 21.007 12.443547 21 11.935547 C 20.992 11.439547 20.702609 10.981938 20.224609 10.710938 C 20.163609 10.676937 19.187672 10.124359 17.763672 9.3183594 C 17.664172 9.2623594 17.551234 9.2426875 17.443359 9.2578125 z M 13.296875 13.644531 C 13.165875 13.644531 13.034047 13.696328 12.935547 13.798828 L 5.4746094 21.566406 C 6.7566094 20.837406 11.328781 18.249578 15.050781 16.142578 C 15.334781 15.981578 15.386156 15.599281 15.160156 15.363281 L 13.65625 13.798828 C 13.55775 13.696328 13.427875 13.644531 13.296875 13.644531 z"></path>
+                    </svg>
+                    <span class="flex flex-col items-start ml-4 leadi">
+                        <span class="mb-0 text-sm font-semibold">Get it on</span>
+                        <span class="font-bold text-lg">Google Play</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href = 'https://apps.apple.com/us/app/cital-store/id6447628065'" class="inline-flex items-center px-6 py-3 rounded-lg dark:bg-orange-500 hover:bg-orange-600 dark:text-gray-900 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="fill-current w-9 h-9 dark:text-gray-900">
+                        <path d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z"></path>
+                    </svg>
+                    <span class="flex flex-col items-start ml-4 leadi">
+                        <span class="mb-1 text-sm">Download on the</span>
+                        <span class="font-bold">App Store</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--LINKS FOOTER-->
+
+    <div>
+    <div class="flex p-20 my-2 mt-10 bg-neutral-800">
+        
+        <div class="space-y-8 align-top items-center">
+            <div class="">
+              <a class="text-md font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/safety">Safety</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/barricade-tapes">Barricade Tapes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/boiler-suits">Boiler Suits</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/ear-protectors">Ear Protectors</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/face-shields">Face Shields</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/fire-blankets">Fire Blankets</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/fire-safety">Fire Safety</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/first-aid-kits">First Aid Kits</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/gumboots">Gumboots</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-belts">Safety Belts</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-gloves">Safety Gloves</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-goggles">Safety Goggles</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-jackets">Safety Jackets</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-masks">Safety Masks</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-shoes">Safety Shoes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/umbrellas">Umbrellas</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/welding-safety">Welding Safety</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-helmets">Safety Helmets</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-nets">Safety Nets</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/raincoats">Raincoats</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/safety-accessories">Safety Accessories</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/hardware-tools">Hardware &amp; Tools</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/tarpaulins">Tarpaulins</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/aluminium-patti">Aluminium Patti</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/barbed-wire">Barbed Wire</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/binding-wire-hook-senting-aakdi">Binding Wire Hook (Senting Aakdi)	</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/binding-wires">Binding Wires</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/bitumen-damar">Bitumen (Damar)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/brushes">Brushes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/buckets-dol">Buckets (Dol)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cement">Cement</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/chisel-chhini-takna">Chisel (Chhini/Takna)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cotton-waste">Cotton Waste</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cover-blocks">Cover Blocks</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/dagh-bar-bending">Dagh (Bar Bending)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/dhar-khunia">Dhar Khunia</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/digging-tools-pavda-trikam">Digging Tools (Pavda/Trikam)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/fittings">Fittings</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/flicker-machine">Flicker Machine</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/garden-tools">Garden Tools </a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/hacksaws">Hacksaws</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/hammers-hathodi">Hammers (Hathodi)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/handles-hatha">Handles (Hatha)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/hand-tools">Hand Tools</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/jute-kantan">Jute / Kantan</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/kodali-kuhadi">Kodali/Kuhadi</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/level-gauge">Level Gauge</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/marking-chalk">Marking Chalk</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/master-gurmala">Master/Gurmala</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/measuring-tapes">Measuring Tapes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/mixer-rod">Mixer Rod</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/nails">Nails</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/net">Net</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/pipe-connecter">Pipe Connecter</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/pipes">Pipes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/plumb-bobs-odambo">Plumb Bobs (Odambo)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/pullers-crowbars-katoni">Pullers &amp; Crowbars (Katoni)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/roofing-sheets">Roofing Sheets</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/rope-dori">Rope (Dori)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/sfrc-cover">SFRC Cover</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/sponge-duster">Sponge (Duster)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/steel-hinges">Steel Hinges</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/trowel-karni">Trowel (Karni)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/u-pin">U Pin</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/waterproofing">Waterproofing</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/welding-rods">Welding Rods</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/wire-claw-panja">Wire Claw (Panja)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/wire-mesh-jali">Wire Mesh (Jali)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/ghamella-tagara">Ghamella (Tagara)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/brown-tape">Brown Tape</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/ply-wood">Ply &amp; Wood</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/bamboo-poles">Bamboo Poles</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/fuel-wood-jalau-lakdi">Fuel Wood (Jalau Lakdi)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/jungle-woods-jangli-lakdi">Jungle Woods (Jangli Lakdi)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/pine-wood-timber">Pine Wood Timber</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/shuttering-plywood">Shuttering Plywood</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/wooden-shuttering-poles-nilgiri-teka">Wooden Shuttering Poles (Nilgiri Teka)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/hardwood">Hardwood</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/lafa">Lafa</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/electricals">Electricals</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/distribution-box">Distribution Box</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/fuses">Fuses</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/junction-boxes">Junction Boxes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/led-lights">LED Lights</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/plugs-sockets">Plugs &amp; Sockets</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/switches">Switches</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/wires-cables">Wires &amp; Cables</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/wiring-connecting">Wiring &amp; Connecting</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/fasteners">Fasteners</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/chemical-anchors">Chemical Anchors</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/fastening-tools">Fastening Tools</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/stationery">Stationery</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/brooms-mops-dusters">Brooms, Mops &amp; Dusters</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cartridge">Cartridge</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/copy-printing-paper">Copy &amp; Printing Paper</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/pens">Pens</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/tape">Tape</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/thermocol-sheets">Thermocol Sheets</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/torch">Torch</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/chemicals-adhesives">Chemicals &amp; Adhesives</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/bonding-agents">Bonding Agents</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/grouting-compound">Grouting Compound</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/repairing-adhesives">Repairing Adhesives</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/shuttering-oil">Shuttering Oil</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/silicone-sealant">Silicone Sealant</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/solvent">Solvent</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/machine-and-power-tools">Machine and Power Tools</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/chisel">Chisel</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/concrete-tools">Concrete Tools</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cutting-blades">Cutting Blades</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cutting-wheels">Cutting Wheels</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/drill-bit">Drill Bit</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/grinding-wheels">Grinding Wheels</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/machine">Machine</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/power-tools">Power Tools</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/accessories">Accessories</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/pipes-fittings-and-adhesives">Pipes, Fittings, and Adhesives</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/agri-pipes">Agri Pipes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/ball-valve">Ball Valve</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/bend">Bend</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/bush">Bush</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cap">Cap</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cleaning-pipe">Cleaning Pipe</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/clip-clamp">Clip / Clamp</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/connector">Connector</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/coupler">Coupler</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/couplings">Couplings</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/elbow">Elbow</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/end-cap">End Cap</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/faucet-valve">Faucet Valve</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/female-threaded-adapter-f-t-a">Female Threaded Adapter (F.T.A.)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/fittings">Fittings</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/jali">Jali</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/male-threaded-adapter-m-t-a">Male Threaded Adapter (M.T.A.)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/metal-clamp">Metal Clamp</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/multi-floor-trap">Multi Floor Trap</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/nahani">Nahani</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/pipe-clip">Pipe Clip</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/pipes">Pipes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/plumbing-pipes">Plumbing Pipes</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/reducer">Reducer</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/reducing-bush">Reducing Bush</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/reducing-elbow">Reducing Elbow</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/reducing-female-threaded-adapter-f-t-a">Reducing Female Threaded Adapter (F.T.A.)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/reducing-male-threaded-adapter-m-t-a">Reducing Male Threaded Adapter (M.T.A.)</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/reducing-tee">Reducing Tee</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/socket-plug">Socket Plug</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/solvent-cement-primer-lubricant">Solvent Cement, Primer &amp; Lubricant</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/step-over-bend">Step Over Bend</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/tank-nipple">Tank Nipple</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/tee">Tee</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/threaded-end-plug">Threaded End Plug</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/trap">Trap</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/union">Union</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/vent-cowl">Vent Cowl</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/y">Y</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/cement">Cement</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/cement">Cement</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/plaster">Plaster</a>
+                  </span>
+              </div>
+            </div>
+            <div class="">
+              <a class="text-sm font-medium text-white hover:text-gray-100 cursor-pointer" href="/categories/scaffolding-and-formwork">Scaffolding and Formwork</a>
+    
+              <div class="pt-2 text-sm flex flex-wrap justify-center">
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/couplers-clamps">Couplers / Clamps</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/jacks">Jacks</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/ladders">Ladders</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/pins">Pins</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/plank">Plank</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/rod">Rod</a>
+                  </span>
+                  <span class="inline-flex">
+                    <div class='w-1 h-1 rounded-full bg-gray-500 m-2'></div>
+                    <a class="text-gray-400 hover:text-gray-200 cursor-pointer" href="/categories/sikanja">Sikanja</a>
+                  </span>
+              </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+  
+    <!--Copyright section-->
+    <div class="bg-neutral-300 p-5 text-center text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200">
+      © 2023 Cital Infra Services Private Limited. All rights reserved.
+    </div>
+  </footer>
+
+
+
+  <!--sm btm Navbar -->
+  <div class="flex md:hidden bottom-0 z-20 h-14 pb-1 bg-white w-full fixed  justify-evenly"><!--bg-gradient-to-t from-white-->
+                                                       
+            
+    <div class="mt-3 w-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>
+    </div>
+    <div class=" mt-3 w-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          
+          
+    </div>
+
+    <div class="mt-3 w-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          
+    </div>
+
+
+  </div>
+
+
+           
+    
+
+
+    
+</body>
+</html>
