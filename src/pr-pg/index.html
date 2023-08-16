@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    
+
+       <!--NAVBAR-->
+       <nav class=" p-4 sm:px-0 z-10 bg-white shadow-xl w-full fixed">
+        <div class="flex flex-wrap relative mx-auto justify-between items-center min-w-full">
+  
+            <a href="http://www.cital.store/" class="flex items-center">
+                <img src="https://www.cital.store/assets/cital_logo-fedb7bbd6851a318549eb781b17f0b08a37a8bf4adb0fe4306088200ed79a618.webp" class="h-14" alt="CITAL">
+            </a>
+  
+            
+            <div class="flex-row flex-grow-1 pt-1 mt-1 relative text-gray-600 bg-gray-100 rounded-lg">
+                <form class="hidden md:block" action="">
+                <input class="bg-gray-100 w-96 h-10 px-5 pr-16 rounded-3xl text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
+                <button type="submit" class="absolute right-0 top-0 mt-3 mr-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                      
+                </button>
+              </form>
+  
+            </div>
+  
+            <!-- div class="justify-evenly align-middle p-5">
+                <ul class="font-medium flex flex-row ">
+                    <li class="">
+                        <a href="#home" class="p-3 text-white hover:text-orange-600 ">HOME</a>
+                    </li>
+                    
+                    <li class="">
+                        <a href="#about" class="p-3 text-white hover:text-orange-600 ">ABOUT</a>
+                    </li>
+  
+                    
+                    <li class="">
+                        <a href="#contact" class="p-3 text-white hover:text-orange-600 ">CONTACT</a>
+                    </li>
+                </ul>
+            </div -->
+  
+            <div class="p-3 hidden lg:block mt-1 relative bg-gray-100 rounded-lg text-gray-500">
+                Delivery to:  
+                <input type="text" name="site" id="site" class="bg-transparent border-dashed" placeholder=" Enter a Site...">
+  
+            </div>
+  
+  
+        
+            <div class="flex relative">
+  
+  
+              <div class="flex flex-col items-center sm:mx-16 mt-1 px-4 mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                <span class="-m-2 hidden sm:block font-medium">Cart</span>
+              </div>
+  
+              
+  
+  
+              <div class="flex flex-col items-center sm:mx-4 mx-auto sm:mr-10 relative ">
+              <button type="button" class=" p-1 focus:outline-none rounded-full focus:ring-2 focus:ring-black" aria-expanded="false" aria-haspopup="true" id="profile-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="h-10 w-10 focus:bg-gray-800" data-dropdown-toggle="dropdown">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                            </svg>
+                            <span></span>
+                          </button>
+                     
+                          
+  
+                           
+                            </div>
+  
+                          </div>              
+                        
+                 
+              
+                  
+            </div>
+        </div>
+  
+    </nav>
+  
+    <div class="md:hidden flex flex-col w-full fixed bg-white pt-24 shadow-xl">
+  
+      <form class="md:hidden" action="">
+        <input class="bg-white h-10 w-full px-5 text-md focus:outline-transparent" type="search" name="search" placeholder="Search">
+        <button type="submit" class="absolute right-0 top-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+              
+        </button>
+      </form>
+  
+    </div>
+
+    <!--
+      BREADCRUMBS
+    <nav class="flex border-b border-gray-200 bg-red-500 z-40 pt-" aria-label="Breadcrumb">
+      <ol role="list" class="mx-auto flex w-full max-w-screen-xl space-x-4 px-4 sm:px-6 lg:px-8">
+        <li class="flex">
+          <div class="flex items-center">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Home</span>
+            </a>
+          </div>
+        </li>
+        <li class="flex">
+          <div class="flex items-center">
+            <svg class="h-full w-6 flex-shrink-0 text-gray-200" viewBox="0 0 24 44" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+              <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
+            </svg>
+            <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Safety</a>
+          </div>
+        </li>
+        <li class="flex">
+          <div class="flex items-center">
+            <svg class="h-full w-6 flex-shrink-0 text-gray-200" viewBox="0 0 24 44" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+              <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
+            </svg>
+            <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700" aria-current="page">Safety Shoes</a>
+          </div>
+        </li>
+      </ol>
+    </nav>
+    -->
+        <!--Breadcrumbs navigation-->
+        <div class="hidden md:block bg-white pt-36 py-2 md:py-0 md:pt-28 px-5 md:px-5 ">
+          <nav class="flex" aria-label="Breadcrumb">
+              <ol role="list" class="flex items-center space-x-4">
+                <li>
+                  <div>
+                    <a href="#" class="text-gray-600 hover:text-gray-500">
+                      <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+                      </svg>
+                      <span class="sr-only">Home</span>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg class="h-5 w-5 flex-shrink-0 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="#" class="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700">Pipes, Fittings & Adhesives</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg class="h-5 w-5 flex-shrink-0 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="#" class="ml-4 text-sm font-bold text-gray-800 hover:text-gray-700">Fittings</a>
+                  </div>
+                </li>
+
+                
+                </ol>
+          
+      </div>
+    
+
+    
+    <!--Product page-->
+    <div class="flex flex-col justify-center flex-wrap lg:mx-10 md:flex-none pt-40 md:pt-2 md:pl-20 md:w-full bg-white">
+
+        <div class="flex flex-col md:flex-row bg-white lg:items-center md:justify-center">
+
+
+            <div class="flex flex-col md:flex md:flex-col lg:mx-20 lg:pl-10 h-full lg:w-1/2 bg-white ">
+
+            <img class="rounded-xl shadow-xl w-full lg:h-96 md:w-96 md:mt-10" src="/prdct-img/prdct-list/shoe1.jpg" alt="Safety Shoes">
+
+            <div class="hidden md:flex mt-5 p-4 justify-center bg-white">
+
+                <button type="submit" id="addtocart" class="p-2 md:p-0 md:w-2/5 md:h-12 rounded-lg bg-orange-600 shadow-lg hover:bg-orange-700" >
+                <span class="md:text-lg font-semibold">ADD TO CART</span>
+                </button>
+            </div>
+
+        </div>
+            
+            <div class="bg-white mt-5 h-full w-full p-5 :p-0">
+                <h1 class="md:text-2xl lg:text-3xl font-bold text-gray-900">Ecco Safety Shoes with Steel Toe</h1>
+            
+            
+             <div class="mt-4 flex">
+              <p class="md:text-2xl lg:text-3xl font-bold text-gray-900 whitespace-nowrap">
+                ₹168
+              </p>
+              <div class="flex px-4 items-center">
+                <span class="text-gray-500 text-2xl whitespace-nowrap line-through">₹183</span>
+                <span class="px-1 text-green-600 text-2xl font-semibold whitespace-nowrap ml-2">(8% OFF)</span>
+              </div>
+            </div>
+
+            <div class="md:hidden flex mt-8 justify-center">
+
+              <button type="submit" id="addtocart" class="p-2 w-full bg-orange-600 shadow-lg hover:bg-orange-700" >
+              <span class="lg:text-lg font-semibold">ADD TO CART</span>
+              </button>
+          </div>
+
+              
+            <div class="mt-8 w-full">
+              <h2 class="mt-4 text-xl text-gray-900">Size</h2>
+
+              <form>
+                <div class="flex flex-wrap gap-3 mt-1">
+
+                    <div>
+                    <label class="flex items-center justify-center rounded-md border h-11 w-16 py-3 px-3 text-lg font-medium uppercase sm:flex-1 cursor-pointer focus:bg-black border-gray-200 bg-white text-gray-900 hover:bg-gray-50" for="shoe6">
+                        <input type="radio" name="size" id="shoe6" value="six" class="sr-only" aria-labelledby="size-choice-0-label"><span>6</span>
+                    </label>
+                   </div>
+
+                   <div>
+                    <label class="flex items-center justify-center rounded-md border py-3 px-3 text-lg h-11 w-16 font-medium uppercase sm:flex-1 cursor-pointer focus:bg-black border-gray-200 bg-white text-gray-900 hover:bg-gray-50" for="shoe7">
+                        <input type="radio" name="size" id="shoe7" value="seven" class="sr-only" aria-labelledby="size-choice-0-label"><span>7</span>
+                    </label>
+                   </div>
+
+                   <div>
+                    <label class="flex items-center justify-center rounded-md border py-3 px-3 text-lg h-11 w-16 font-medium uppercase sm:flex-1 cursor-pointer focus:bg-black border-gray-200 bg-white text-gray-900 hover:bg-gray-50" for="shoe7">
+                        <input type="radio" name="size" id="shoe8" value="eight" class="sr-only" aria-labelledby="size-choice-0-label"><span>8</span>
+                    </label>
+                   </div>
+
+                   <div>
+                    <label class="flex items-center justify-center rounded-md border py-3 px-3 text-lg h-11 w-16 font-medium uppercase sm:flex-1 cursor-pointer focus:bg-black border-gray-200 bg-white text-gray-900 hover:bg-gray-50" for="shoe7">
+                        <input type="radio" name="size" id="shoe9" value="nine" class="sr-only" aria-labelledby="size-choice-0-label"><span>9</span>
+                    </label>
+                   </div>
+
+                   <div>
+                    <label class="flex items-center justify-center rounded-md border py-3 px-3 text-lg h-11 w-16 font-medium uppercase sm:flex-1 cursor-pointer focus:bg-black border-gray-200 bg-white text-gray-900 hover:bg-gray-50" for="shoe7">
+                        <input type="radio" name="size" id="shoe10" value="ten" class=" sr-only" aria-labelledby="size-choice-0-label"><span>10</span>
+                    </label>
+                   </div>
+
+                     
+                 </div>
+                    
+              </form>
+
+            </div>
+              
+           
+
+          <div class="flex bg-white mt-8" >
+            <form id="add-to-cart-form" data-controller="store--www--product-details" data-action="submit-&gt;store--www--product-details#addToCart turbo:submit-end-&gt;store--www--product-details#requestComplete" action="/cart/1oPcuTNSso2fV1PX/add_item" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Xe9xTsc-jTsxBD2chESTsExnRWbs-XlxBHr8tjxmMdrDCZ4RjfTXkI4eTJTQZMf5kCM_ZHJTghZZdMOzf0vASg" autocomplete="off" />
+                <input type="hidden" name="sv_uid" id="sv_uid" value="uZ955hf0pAgJ4RPm" autocomplete="off" />
+                <input type="hidden" name="tn_uid" id="tn_uid" value="v9kIt5vqHgjqAY5r" autocomplete="off" />
+            
+                <!-- Qty -->
+             <div class="bg-white">
+              <h2 class="text-xl text-gray-900">Qty</h2>
+            
+              <fieldset class="mt-1">
+                <legend class="sr-only">Select qty</legend>
+                <div class="flex items-center space-x-3">
+                
+                  <div class="relative rounded-md shadow-sm">
+                    <input type="number" name="qty" value="1"
+                           class="block p-2 w-20 rounded-md border-0 py-1.5 pr-12 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                           min="1" step="1" aria-labelledby="qty-label">
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                        <span class="text-gray-500 text-sm" id="price-unit">pair</span>
+                      </div>
+                  </div>
+                </div>
+              </fieldset>
+              </div>
+            </form>
+
+            <form id="add-to-cart-form" data-controller="store--www--product-details" data-action="submit-&gt;store--www--product-details#addToCart turbo:submit-end-&gt;store--www--product-details#requestComplete" action="/cart/1oPcuTNSso2fV1PX/add_item" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Xe9xTsc-jTsxBD2chESTsExnRWbs-XlxBHr8tjxmMdrDCZ4RjfTXkI4eTJTQZMf5kCM_ZHJTghZZdMOzf0vASg" autocomplete="off" />
+
+              <div class="bg-white mx-8">
+                <label for="current_site" class="block text-xl text-gray-900">Site</label>
+                
+                  <input type="text" name="site_uid" id="current_site" value="Site" disabled class="block mt-1 w-96 px-1.5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-800 disabled:ring-gray-200 sm:text-sm sm:leading-6">
+                
+              </div>
+
+
+              
+            </form>
+
+          </div>
+
+
+            <div class=" mt-8 md:mt-10 lg:w-1/2">
+                <h2 class="text-xl text-gray-900">Product details</h2>
+            
+                <div class="prose prose-xl mt-2 text-gray-600">
+                  <p><p>Experience ultimate safety and comfort with the IndCare Ecco Safety Shoes. 
+                  Designed with a synthetic leather upper and a PVC sole, these shoes offer durability and slip resistance. 
+                  The China mesh lining ensures breathability, while the steel toe provides maximum protection. Stay safe and confident on any job site.</p></p>
+                </div>
+              </div>
+
+          
+
+
+
+            
+        </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+    
+
+</div>
+
+    
+    
+</body>
+</html>
